@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum|Pacifico');
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: #000;
+  outline: none;
+  line-height: 1.25;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Cuprum', sans-serif;
+}
+#modalHead {
+  z-index: 10;
+  height: 7.5vh;
+  display: flex;
+  padding: 0 5vw;
+  position: relative;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(51,122,183,0.9);
+}
+header {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  width: 11.25em;
+  font-size: .5em;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Pacifico', cursive;
+  border-bottom: 2.5px solid #337AB7;
+}
+#modal {
+  z-index: 10;
+  width: 50vw;
+  position: fixed;
+  border-radius: 10px;
+  border: 1px solid rgba(51,122,183,0.33);
+}
+#modalHeadX {
+  width: .5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mID, #bxID, #bID, #qID, #siID {
+  width: 50vw;
+  height: 50vh;
+  margin: 0 auto;
+}
+#modalHeadName {
+  width: 99.5%;
+  display: flex;
+  align-items: center;
+}
+button {
+  color: #FFF;
+  padding: 5px;
+  background-color: #337AB7;
+}
+.sympOps:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+.blue {
+  color: #337AB7;
+  font-family: Arial;
+}
+header > div {
+  width: 62.5vw;
+  text-align: center;
+}
+.sympOps {
+  width: 100px;
+  margin: 0 auto;
+}
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+}
+.header {
+  font-size: 75px;
+}
+.fa {
+  cursor: pointer;
+}
+#listOfSymps {
+  margin: 25px 0;
+}
+#h1 {
+  z-index: 1;
+}
