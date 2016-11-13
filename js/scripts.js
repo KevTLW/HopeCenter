@@ -159,7 +159,7 @@ function findInArea() {
   else {
     $("#dID").show();
   }
-  $("#dID").text("Sorry, but HopeCenter is currently only available in the NYC area.");
+  $("#dID").text("Sorry, but HopeCenter is currently only available in the NYC boroughs.");
 }
   // Hospital Results
 
