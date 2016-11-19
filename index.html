@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HopeCenter</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="icon" type="image/png" href="imgs/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="map/leaflet.awesome-markers.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript" src="map/leaflet.awesome-markers.js"></script>
+  </head>
+  <body>
+  
+      <!-- Intro Page -->
+    <header id="h1">
+      <div id="head1">
+        <button disabled>Your Reliable Health Source</button>
+        <h1 class="header">HopeCenter</h1>
+        <h1><i class="fa fa-heartbeat" id="start"></i></h1>
+      </div>
+    </header>
+      <!-- Intro Page -->
+
+      <!-- Info Page -->
+    <header id="h2">
+      <div id="head2">
+        <h1 class="blue">__</h1>
+        <h1>What is HopeCenter?</h1>
+        <p>
+          HopeCenter is a multi platform program that serves as an essential item in a first aid kit. HopeCenter allows its users to locate hospitals and to also effectively identify and cure any illnesses they might be going through. The program includes an interactive symptom identifier in which users will click and choose where they believe the source of their illness is. It also includes a locator for hospitals around the area of the user.
+        </p>
+        <h1>
+          <span><i class="fa fa-hospital-o" title="Hospital Locator"></i></span>
+            &nbsp;&nbsp;
+          <span><i class="fa fa-user-md" title="Symptom Identifier"></i></span>
+            &nbsp;&nbsp;
+          <span><i class="fa fa-download" title="Download"></i></span>
+        </h1>
+        <button disabled>Hospital<br>Locator</button>&nbsp;  
+        <button disabled>Symptom<br>Identifier</button>&nbsp;
+        <button disabled>Download<br>App</button>
+      </div>
+    </header>
+      <!-- Info Page -->
+
+      <!-- Download Page -->
+    <header id="h3">
+      <div id="head3">
+        <button disabled>Download Our Mobile App</button>
+        <h1 class="header">
+          <span><i class="fa fa-apple" onClick="iosApps()"></i></span>
+            &nbsp;&nbsp;
+          <span><i class="fa fa-android" onClick="androidApps()"></i></span>
+        </h1>
+        <p id="appInfo"></p>
+        <button id="back3">Return To Menu</button>
+      </div>
+    </header>  
+      <!-- Download Page -->
+
+      <!-- Symptom Identifier -->
+    <header id="h4">
+      <div id="head4">
+		      <!-- Upper Body Container -->        
+        <span>
+	        <button id="upper">Head - Throat</button>
+		        <br>
+        </span>
+        <div id="upperBody">
+        	<br>
+        	<ul>
+        		<li id="u-Hair" class="sympOps">Hair</li>
+        		<li id="u-Eyes" class="sympOps">Eyes</li>
+        		<li id="u-Ears" class="sympOps">Ears</li>
+        		<li id="u-Nose" class="sympOps">Nose</li>
+        		<li id="u-Mouth" class="sympOps">Mouth</li>
+        		<li id="u-Throat" class="sympOps">Throat</li>
+        	</ul>
+        </div>
+        	<!-- Upper Body Container --> 
+        <br>	
+		      <!-- Middle Body Container -->        
+        <span>
+	        <button id="middle">Shoulders - Abdomen</button>
+		        <br>
+        </span>
+        <div id="middleBody">
+        	<br>
+        	<ul>
+        		<li id="m-Shoulders" class="sympOps">Shoulders</li>
+        		<li id="m-Biceps" class="sympOps">Biceps</li>
+        		<li id="m-Triceps" class="sympOps">Triceps</li>
+        		<li id="m-Forearms" class="sympOps">Forearms</li>
+        		<li id="m-Elbows" class="sympOps">Elbows</li>
+        		<li id="m-Hands" class="sympOps">Hands</li>
+        		<li id="m-Chest" class="sympOps">Chest</li>
+        		<li id="m-Back" class="sympOps">Back/Spine</li>
+        		<li id="m-Abdomen" class="sympOps">Abdomen</li>
+        	</ul>
+        </div>
+        	<!-- Middle Body Container --> 
+        <br>	
+		      <!-- Lower Body Container -->        
+        <span>
+	        <button id="lower">Pelvis - Feet</button>
+		        <br>
+        </span>
+        <div id="lowerBody">
+        	<br>
+        	<ul>
+        		<li id="l-Genitalia" class="sympOps">Genitalia</li>
+        		<li id="l-Legs" class="sympOps">Legs</li>
+        		<li id="l-Knees" class="sympOps">Knees</li>
+        		<li id="l-Ankles" class="sympOps">Ankles</li>
+        		<li id="l-Feet" class="sympOps">Feet</li>
+        	</ul>
+        </div>
+        	<!-- Lower Body Container --> 
+      <br><br>
+        <button id="back4">Return To Menu</button>  
+      </div>
+    </header>
+      <!-- Symptom Identifier -->
+
+      <!-- Hospital Locator -->
+    <header id="h5">
+      <div id="head5">
+        <h1>Hospitals in the <input id="hospitalArea" type="text" name="area" onKeyUp="return forceLower(this);"> area</h1>
+          <br>
+        <button id="submit" onClick="findInArea();">Submit Area</button>&nbsp;&nbsp;<button id="back5">Return To Menu</button>
+      </div>
+    </header>
+      <!-- Hospital Locator -->
+
+      <!-- Processing -->
+    <header id="h6">
+      <div id="head6">
+        <h1><i class="fa fa-circle-o-notch fa-spin blue"></i></h1>
+        <h1>Processing</h1>
+      </div>
+    </header>
+      <!-- Processing -->
+
+      <!-- Results -->
+    <header id="h7">
+      <div id="head7">
+        <button disabled>Hospitals In Your Area</button>
+          <br><br>
+        <div id="mID"></div>
+        <div id="bID"></div>
+        <div id="qID"></div>
+        <div id="bxID"></div>
+        <div id="siID"></div>
+        <h1 id="dID">HopeCenter is currently only in NYC boroughs</h1>
+          <br>
+        <button id="back7">Return To Menu</button>
+      </div>
+    </header>
+      <!-- Results -->
+		
+      <!-- Symptom Results -->
+		<header id="h8">
+			<div id="modal">
+				<div id="modalHead">
+					<div id="modalHeadName">
+						<h1 id="sympLocation"></h1>
+					</div>
+					<div id="modalHeadX">
+						<h2><i class="fa fa-times"></i></h2>
+					</div>
+				</div>
+				<div id="listOfSymps">
+					<h2>Possible Diseases</h2>
+					<p id="symps"></p>
+				</div>
+			</div>
+		</header>
+      <!-- Symptom Results -->
+    
+    <script type="text/javascript" src="js/maps.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/symptoms.js"></script>
+  </body>
+</html>
