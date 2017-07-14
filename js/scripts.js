@@ -148,7 +148,7 @@ function findInArea() {
     $("#bID").show().css("z-index", 1);
   }
   else if (area == "queens") {
-    $("#1ID").show().css("z-index", 1);
+    $("#qID").show().css("z-index", 1);
   }
   else if (area == "bronx") {
     $("#bxID").show().css("z-index", 1);
