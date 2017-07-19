@@ -65,7 +65,7 @@ L.marker([40.73292,-73.983202], {icon: L.AwesomeMarkers.icon({icon: "hospital-o"
 			// Mount Sinai Beth Israel
 
 			// Mount Sinai Hospital
-L.marker([40.7899116,-73.9546519], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
+L.marker([40.7899116,-73.9526], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
   .bindPopup("Mount Sinai Hospital<br><a target='_blank' href='https://www.google.com/maps/dir//The+Mount+Sinai+Hospital,+1468+Madison+Avenue,+New+York,+NY+10029/@40.7897101,-74.0227334,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c2f63dcaeeda93:0x9797c11e6d7bc63f!2m2!1d-73.9526931!2d40.7897313'>Directions</a>")
 			// Mount Sinai Hospital
 
@@ -75,7 +75,7 @@ L.marker([40.8056371,-73.9612805], {icon: L.AwesomeMarkers.icon({icon: "hospital
 			// Mount Sinai St. Luke's
 
 			// Mount Sinai West
-L.marker([40.7697975,-74.0571779], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
+L.marker([40.7694605,-73.9866454], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
   .bindPopup("Mount Sinai West<br><a target='_blank' href='https://www.google.com/maps/dir//Mount+Sinai+West,+1000+10th+Avenue,+New+York,+NY+10019/@40.7697975,-74.0571779,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c2f63dbf5e303b:0x7bd728896053e9c8!2m2!1d-73.9871376!2d40.7698187'>Directions</a>")
 			// Mount Sinai West
 
@@ -110,7 +110,7 @@ L.marker([40.7342432,-73.9853158], {icon: L.AwesomeMarkers.icon({icon: "hospital
 			// N.Y.U. Hospital for Joint Diseases
 
 			// N.Y.U. Langone Medical Center
-L.marker([40.7466602,-74.0423964], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
+L.marker([40.7467563,-73.9723654], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
   .bindPopup("N.Y.U. Langone Medical Center<br><a target='_blank' href='https://www.google.com/maps/dir//NYU+Langone%E2%80%99s+Center+for+Musculoskeletal+Care,+333+East+38th+Street,+New+York,+NY+10016/@40.7466602,-74.0423964,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c25904d0acb46f:0x8ec0d89ff784e14f!2m2!1d-73.9723561!2d40.7466814'>Directions</a>")
 			// N.Y.U. Langone Medical Center
 
