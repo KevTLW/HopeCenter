@@ -65,7 +65,7 @@ L.marker([40.73292,-73.983202], {icon: L.AwesomeMarkers.icon({icon: "hospital-o"
 			// Mount Sinai Beth Israel
 
 			// Mount Sinai Hospital
-L.marker([40.7897101,-74.0227334], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
+L.marker([40.7694605,-74.0565464], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
   .bindPopup("Mount Sinai Hospital<br><a target='_blank' href='https://www.google.com/maps/dir//The+Mount+Sinai+Hospital,+1468+Madison+Avenue,+New+York,+NY+10029/@40.7897101,-74.0227334,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c2f63dcaeeda93:0x9797c11e6d7bc63f!2m2!1d-73.9526931!2d40.7897313'>Directions</a>")
 			// Mount Sinai Hospital
 
@@ -115,7 +115,7 @@ L.marker([40.7466602,-74.0423964], {icon: L.AwesomeMarkers.icon({icon: "hospital
 			// N.Y.U. Langone Medical Center
 
 			// Rockefeller Institute Hospital
-L.marker([40.7628264,-73.95801], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
+L.marker([40.7467563,-74.0422664], {icon: L.AwesomeMarkers.icon({icon: "hospital-o", prefix: "fa", markerColor: "darkblue"}) }).addTo(mMap)
   .bindPopup("Rockefeller Institute Hospital<br><a target='_blank' href='https://www.google.com/maps/dir//Rockefeller+University+Hospital,+1230+York+Avenue,+New+York,+NY+10065/@40.7628012,-74.0258616,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c258c31a802b8d:0x4dfb5d18fc0c574e!2m2!1d-73.9558213!2d40.7628224'>Directions</a>")
 			// Rockefeller Institute Hospital
 	// Manhattan
